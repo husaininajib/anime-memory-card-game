@@ -71,5 +71,13 @@ cards.forEach(card => {
     card.addEventListener("click", flipCard)
 })
 
+const resetButton = document.querySelector(".reset-button")
+function refresh() {
+    location.reload()
+}
+
+resetButton.addEventListener("click", refresh)
+
+
 
 
