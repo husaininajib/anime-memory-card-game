@@ -6,12 +6,14 @@
   padding: 0;
 }
 body {
-  background: rgb(34, 193, 195);
+  /* background: rgb(34, 193, 195);
   background: linear-gradient(
     0deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(116, 102, 170, 1) 100%
-  );
+  ); */
+  background-color: #c7d3d4ff;
+  color: #603f83ff;
   height: 100vh;
   display: flex;
 }
@@ -45,12 +47,13 @@ h1 {
   position: relative;
   width: calc(25% - 10px);
   height: calc(33.333% - 10px);
-  border: 2px solid white;
+  border: 2px solid #990011ff;
   border-radius: 5px;
   margin: 5px;
   transform: scale(1);
   transform-style: preserve-3d;
   transition: 0.5s;
+  background-color: #603f83ff;
 }
 .card-item.flip {
   transform: rotateY(180deg);
@@ -73,19 +76,22 @@ h1 {
   transform: rotateY(180deg);
 }
 .reset-button {
+  font-size: 1.2rem;
+  font-weight: 600;
   text-align: center;
   margin-top: 2.5rem;
 }
 .reset-button span:hover {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #603f83ff;
+  color: #603f83ff;
   cursor: pointer;
 }
 .reset-button span {
   font-family: "Nunito", sans-serif;
-  background-color: #333;
+  background-color: #603f83ff;
   border-radius: 5px;
-  color: #fff;
+  color: #c7d3d4ff;
   padding: 0.7rem;
 }
 @media screen and (max-width: 700px) {
